@@ -30,4 +30,8 @@ def draw_text(surf, text, size, x, y):
     surf.blit(text_surface, text_rect)
 
 draw_text(screen, str(totalPoints), 34, WIDTH/2, 10)
+
+
+
+def shows_status(self)
    
