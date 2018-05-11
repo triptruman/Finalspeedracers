@@ -1,24 +1,26 @@
+import pygame
+import time
+pygame.init()
+
+DW = 1280
+DH = 720
+
+DS = pygame.display.set_mode((DW,DH))
+pygame.display.set_caption("score")
+
+WHITE = (255,255,255)
+
+#help from https://pythonprogramming.net/displaying-text-pygame-screen/ 
+## this is the code gabe used to say "you lose"
 
 
-####we need to define the player class
-def show_status(self):
+font_name = pygame.font.match_font('arial')
+def draw_text(surf, text, size, x, y):
+        font = pygame.font.font(font_name, size)
+        text_surface = font.render(text, True, WHITE)
+        text_rect = text_surface.get_rect()
+        text_rect.midtop = (x,y)
+        surf.blit(text_surface, text_rect)
+        time.sleep(2)
 
-        self.pen.undo()
-
-        msg = "PLAYER: %s" %(self.score)
-
-        self.pen.penup()
-
-        self.pen.goto(75,
-200)
-
-        self.pen.write(msg, 
-font=("Times New Roman", 
-18, "normal"))
-
-
-
-
-            game.score += 1
-
-            game.show_status()
+draw_text(surf, "test", 10, 10, 10)
