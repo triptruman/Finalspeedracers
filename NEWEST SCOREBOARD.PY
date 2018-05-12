@@ -10,8 +10,6 @@ pygame.display.set_caption("score")
 
 WHITE = (255,255,255)
 
-#help from https://pythonprogramming.net/displaying-text-pygame-screen/ 
-## this is the code gabe used to say "you lose"
 
 
 font_name = pygame.font.match_font('arial')
