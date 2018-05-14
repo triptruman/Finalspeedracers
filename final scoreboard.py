@@ -1,17 +1,11 @@
 import pygame
 import time
 pygame.init()
-
 DW = 1280
 DH = 720
-
 DS = pygame.display.set_mode((DW,DH))
 pygame.display.set_caption("score")
-
 WHITE = (255,255,255)
-
-
-
 font_name = pygame.font.match_font('arial')
 def draw_text(surf, text, size, x, y):
         font = pygame.font.font(font_name, size)
@@ -20,5 +14,4 @@ def draw_text(surf, text, size, x, y):
         text_rect.midtop = (x,y)
         surf.blit(text_surface, text_rect)
         time.sleep(2)
-
 draw_text(surf, "test", 10, 10, 10)

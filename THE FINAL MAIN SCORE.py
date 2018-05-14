@@ -39,11 +39,11 @@ while True:
 
     screen.fill(WHITE)
 
-    disclaimertext = myfont.render("YEEE I GOT IT TO WORK...", 1, (0,0,0))
+    disclaimertext = myfont.render("Hell YEAH!!!!! I GOT IT TO WORK!!!!!!!!!", 1, (0,1,0))
     screen.blit(disclaimertext, (5, 480))
 
     scoretext = myfont.render("Score {0}".format(score), 1, (0,0,0))
-    screen.blit(scoretext, (5, 10))
+    screen.blit(scoretext, (0, 0))
     score += 1
 
 
